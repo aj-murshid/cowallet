@@ -1,5 +1,5 @@
 .hero-section {
-    background: linear-gradient(#684CF6, #6A36FF);
+    background: var(--gradient-primary);
     padding: 0 200px;
 }
 
@@ -9,7 +9,6 @@
     align-items: center;
     color: rgb(233, 232, 232);
     height: 90vh;
-    background: linear-gradient(#684CF6, #6A36FF);
 }
 
 .leftside {
@@ -42,21 +41,30 @@ h2 {
     text-transform: capitalize;
 }
 
-.cta {
+.buttons {
     display: flex;
     margin-top: 15px;
     gap: 15px;
 }
 
-.cta>button {
+.buttons>button {
+    display: flex;
+    align-items: center;
     background: #00000057;
     padding: 10px;
     border-radius: 10px;
     border: none;
-    width: 160px;
+    /* width: 160px; */
+    width: auto;
     height: 50px;
+    gap: 10px;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
+}
+
+.buttons>button>svg {
+    width: 20%;
+    padding-right: 5px;
 }
 
 .rightside {
